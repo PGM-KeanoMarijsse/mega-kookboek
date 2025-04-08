@@ -40,12 +40,13 @@ export default function Page() {
         </h1>
         <div className="flex">
           {/* Placeholder for image */}
-          <div className="w-1/2 bg-gray-700 h-64 flex items-center justify-center">
+            <div className="w-1/2 bg-gray-700 h-64 flex items-center justify-center">
             <img
               src={`images/${recipe.image.src}`}
               alt={recipe.image.alt}
+              className="h-48 w-48 object-cover"
             />
-          </div>
+            </div>
 
           {/* Recipe details */}
           <div className="w-1/2 pl-6">
