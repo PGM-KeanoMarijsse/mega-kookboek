@@ -6,7 +6,7 @@ import { recipe } from "@/types/types";
 import { FaEuroSign, FaClock } from "react-icons/fa";
 import { IoPeople } from "react-icons/io5";
 
-export default async function Page({ params }: { params: { documentId: any } }) {
+export default async function Page({ params }: { params: { documentId: string } }) {
   const documentId = (await params).documentId;
   async function fetchRecipe() {
     try {
