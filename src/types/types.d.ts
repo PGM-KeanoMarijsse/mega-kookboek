@@ -5,9 +5,9 @@ export type recipe = {
   prepTime: number;
   price: number;
   image: {
-    url: string;
-    alternativeText: string;
+    src: string;
+    alt: string;
   };
-  ingredients: string;
-  instructions: string;
+  ingredients: [];
+  instructions: [];
 };

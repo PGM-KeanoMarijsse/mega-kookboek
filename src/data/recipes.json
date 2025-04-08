@@ -1,0 +1,265 @@
+[
+  {
+    "documentId": "a1b2c3d4",
+    "title": "Pasta Pesto met Kip en Tomaat",
+    "price": 5,
+    "persons": 2,
+    "time": 20,
+    "image": {
+      "src": "pasta-pesto-met-kip.jpg",
+      "alt": "Pasta Pesto met Kip en Tomaat"
+    },
+    "ingredients": [
+      "150g pasta (penne of spaghetti)",
+      "2 kipfilets",
+      "3 eetlepels groene pesto",
+      "10 kerstomaatjes",
+      "1 teentje knoflook",
+      "1 eetlepel olijfolie",
+      "Peper & zout"
+    ],
+    "instructions": [
+      "Kook de pasta volgens de aanwijzingen op de verpakking.",
+      "Snij de kipfilets in stukjes en bak ze gaar in olijfolie.",
+      "Voeg geperste knoflook toe en roer even door.",
+      "Halveer de kerstomaatjes en voeg ze toe aan de pan.",
+      "Meng de gekookte pasta erdoor en roer de pesto erdoorheen.",
+      "Breng op smaak met peper en zout. Klaar!"
+    ]
+  },
+  {
+    "documentId": "e5f6g7h8",
+    "title": "Chili sin Carne",
+    "price": 4,
+    "persons": 2,
+    "time": 30,
+    "image": {
+      "src": "chili-sin-carne.jpg",
+      "alt": "Chili sin Carne"
+    },
+    "ingredients": [
+      "1 blik kidneybonen",
+      "1 blik tomatenblokjes",
+      "1 paprika",
+      "1 ui",
+      "1 teentje knoflook",
+      "1 tl komijn",
+      "1 tl paprikapoeder",
+      "1 el olie"
+    ],
+    "instructions": [
+      "Snipper de ui en knoflook, fruit ze in olie.",
+      "Snij de paprika in blokjes en voeg toe.",
+      "Doe de tomatenblokjes en bonen erbij.",
+      "Voeg kruiden toe en laat 15 min sudderen.",
+      "Serveer met rijst, nacho’s of brood."
+    ]
+  },
+  {
+    "documentId": "i9j0k1l2",
+    "title": "Eenvoudige Curry met Rijst",
+    "price": 4.5,
+    "persons": 2,
+    "time": 25,
+    "image": {
+        "src": "curry.jpg",
+        "alt": "Eenvoudige Curry met Rijst"
+    },
+    "ingredients": [
+      "150g rijst",
+      "1 ui",
+      "1 teentje knoflook",
+      "1 blik kikkererwten",
+      "200ml kokosmelk",
+      "1 el currypasta (rood of geel)",
+      "1 handje spinazie",
+      "1 el olie"
+    ],
+    "instructions": [
+      "Kook de rijst.",
+      "Fruit ui en knoflook in olie.",
+      "Voeg currypasta toe en bak kort mee.",
+      "Giet de kokosmelk erbij, voeg kikkererwten toe.",
+      "Laat 10 min pruttelen. Voeg spinazie op het einde toe.",
+      "Serveer met rijst."
+    ]
+  },
+  {
+    "documentId": "m3n4o5p6",
+    "title": "Wraps met Tonijn en Mais",
+    "price": 3.5,
+    "persons": 2,
+    "time": 10,
+    "image": {
+        "src": "wraps-tonijn-en-mais.jpg",
+        "alt": "Wraps met Tonijn en Mais"
+    },
+    "ingredients": [
+      "4 wraps",
+      "1 blik tonijn",
+      "3 eetlepels maïs",
+      "1 eetlepel mayonaise of yoghurt",
+      "1 handje sla",
+      "Peper & zout"
+    ],
+    "instructions": [
+      "Meng tonijn, maïs en mayonaise.",
+      "Breng op smaak met peper en zout.",
+      "Leg een beetje sla op elke wrap.",
+      "Lepel het tonijnmengsel erop en rol op.",
+      "Klaar in een handomdraai!"
+    ]
+  },
+  {
+    "documentId": "q7r8s9t0",
+    "title": "Snelle Ramen met Ei en Groenten",
+    "price": 3,
+    "persons": 2,
+    "time": 15,
+    "image": {
+        "src": "ramen-met-ei-en-groenten.jpg",
+        "alt": "Snelle Ramen met Ei en Groenten"
+    },
+    "ingredients": [
+      "2 instant noodles (naturel of kip)",
+      "2 eieren",
+      "1 wortel",
+      "1/2 broccoli",
+      "1 lente-ui",
+      "Sojasaus"
+    ],
+    "instructions": [
+      "Kook de eieren zacht (6-7 min).",
+      "Snij wortel en broccoli en kook kort mee met de noedels.",
+      "Voeg sojasaus toe naar smaak.",
+      "Pel de eieren, halveer ze en leg bovenop.",
+      "Snij lente-ui en strooi erover."
+    ]
+  },
+  {
+    "documentId": "u1v2w3x4",
+    "title": "Omelet met Groenten en Kaas",
+    "price": 2.5,
+    "persons": 2,
+    "time": 15,
+    "image": {
+        "src": "omelet-met-groenten-en-kaas.avif",
+        "alt": "Omelet met Groenten en Kaas"
+    },
+    "ingredients": [
+      "4 eieren",
+      "1 paprika",
+      "1 ui",
+      "50g geraspte kaas",
+      "Peper, zout",
+      "Boter of olie"
+    ],
+    "instructions": [
+      "Snij de groenten in stukjes en bak in pan.",
+      "Klop de eieren los met peper en zout.",
+      "Giet de eieren over de groenten.",
+      "Strooi kaas erover, laat stollen.",
+      "Serveer warm met brood."
+    ]
+  },
+  {
+    "documentId": "y5z6a7b8",
+    "title": "Gebakken Aardappels met Spinazie en Ei",
+    "price": 3.5,
+    "persons": 2,
+    "time": 20,
+    "image": {
+        "src": "spinazie-met-ei.jpg",
+        "alt": "Gebakken Aardappels met Spinazie en Ei"
+    },
+    "ingredients": [
+      "400g aardappelen",
+      "2 eieren",
+      "1 ui",
+      "150g verse spinazie",
+      "Olie, peper en zout"
+    ],
+    "instructions": [
+      "Snij de aardappelen in blokjes en bak ze goudbruin.",
+      "Voeg gesnipperde ui toe en bak mee.",
+      "Roerbak de spinazie kort mee.",
+      "Bak de eieren apart.",
+      "Serveer aardappels met een ei bovenop."
+    ]
+  },
+  {
+    "documentId": "c9d0e1f2",
+    "title": "Studentenpizza (tortillabodem)",
+    "price": 3,
+    "persons": 2,
+    "time": 15,
+    "image": {
+        "src": "studenten-pizza.jpg",
+        "alt": "Studentenpizza (tortillabodem)"
+    },
+    "ingredients": [
+      "2 wraps",
+      "4 eetlepels tomatensaus",
+      "100g geraspte kaas",
+      "Toppings: paprika, ui, champignons, salami (wat je hebt)"
+    ],
+    "instructions": [
+      "Verwarm oven op 200°C.",
+      "Besmeer wraps met saus, strooi kaas erover.",
+      "Beleg met favoriete toppings.",
+      "Bak 8-10 min in oven.",
+      "Snij in punten en serveer."
+    ]
+  },
+  {
+    "documentId": "g3h4i5j6",
+    "title": "Griekse Salade met Brood",
+    "price": 3.5,
+    "persons": 2,
+    "time": 10,
+    "image": {
+        "src": "griekse-salade-met-brood.avif",
+        "alt": "Griekse Salade met Brood"
+    },
+    "ingredients": [
+      "1 komkommer",
+      "2 tomaten",
+      "1 rode ui",
+      "100g feta",
+      "8 olijven",
+      "Oregano, olijfolie",
+      "Brood naar keuze"
+    ],
+    "instructions": [
+      "Snij groenten in stukjes.",
+      "Verkruimel feta erover.",
+      "Voeg olijven toe.",
+      "Besprenkel met olijfolie en oregano.",
+      "Serveer met brood."
+    ]
+  },
+  {
+    "documentId": "k7l8m9n0",
+    "title": "Havermoutpannenkoeken",
+    "price": 2.5,
+    "persons": 2,
+    "time": 20,
+    "image": {
+        "src": "Havermoutpannenkoek.jpg",
+        "alt": "Havermoutpannenkoeken"
+    },
+    "ingredients": [
+      "100g havermout",
+      "1 banaan",
+      "2 eieren",
+      "1 tl bakpoeder",
+      "Scheutje melk"
+    ],
+    "instructions": [
+      "Mix alles in blender tot beslag.",
+      "Verhit een beetje olie in pan.",
+      "Bak kleine pannenkoekjes aan beide kanten bruin.",
+      "Serveer met honing of fruit."
+    ]
+  }
+]

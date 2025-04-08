@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
+
 type cardProps = {
   documentId: string;
   title: string;
@@ -8,8 +9,8 @@ type cardProps = {
   prepTime: number;
   price: number;
   image: {
-    url: string;
-    alternativeText: string;
+    src: string;
+    alt: string;
   };
 };
 
@@ -20,8 +21,8 @@ export default function Card(recipe: cardProps) {
       className="flex flex-col gap-4 w-full max-w-[400px] bg-white dark:bg-[#1a1a1a] rounded-lg shadow-md overflow-hidden"
     >
       <img
-        src={`${process.env.NEXT_PUBLIC_STRAPI_URL}${recipe.image.url}`}
-        alt={recipe.image.alternativeText}
+        src={`images/${recipe.image.src}`}
+        alt={recipe.image.alt}
         className="w-full h-48 object-cover"
       />
       <div className="p-4">

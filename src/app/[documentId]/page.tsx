@@ -1,38 +1,29 @@
 "use client";
 import React from "react";
-import { request } from "graphql-request";
-import { getRecipeByDocumentId } from "@/graphql/recipes";
 import { recipe } from "@/types/types";
 import { FaEuroSign, FaClock } from "react-icons/fa";
 import { IoPeople } from "react-icons/io5";
 import { useParams } from "next/navigation";
 
+
+
+import recipes from "@/data/recipes.json";
+
 export default function Page() {
   const params = useParams();
   const { documentId } = params;
 
-  async function fetchRecipe() {
-    try {
-      const response = await request<{ recipe: recipe }>(
-        `${process.env.NEXT_PUBLIC_STRAPI_URL}/graphql`,
-        getRecipeByDocumentId,
-        {
-          documentId: documentId,
-        }
-      );
-      return response.recipe;
-    } catch (error) {
-      console.log(error);
-      return null;
-    }
-  }
-
   const [recipe, setRecipe] = React.useState<recipe | null>(null);
 
   React.useEffect(() => {
-    fetchRecipe().then((data) => {
-      if (data) setRecipe(data);
-    });
+    const fetchRecipe = async () => {
+      const recipeData = recipes.find((recipe) => recipe.documentId === documentId);
+      if (recipeData) {
+        setRecipe(recipeData);
+      }
+    };
+
+    fetchRecipe();
   }, [documentId]);
 
   if (!recipe) {
@@ -51,8 +42,8 @@ export default function Page() {
           {/* Placeholder for image */}
           <div className="w-1/2 bg-gray-700 h-64 flex items-center justify-center">
             <img
-              src={`${process.env.NEXT_PUBLIC_STRAPI_URL}${recipe.image.url}`}
-              alt={recipe.image.alternativeText}
+              src={`images/${recipe.image.src}`}
+              alt={recipe.image.alt}
             />
           </div>
 
@@ -78,7 +69,7 @@ export default function Page() {
                 Ingredients:
               </h2>
               <ul className="list-disc pl-5 text-gray-400 text-left">
-                {recipe.ingredients.split("\n").map((ingredient, index) => (
+                {recipe.ingredients.map((ingredient, index) => (
                   <li key={index}>{ingredient}</li>
                 ))}
               </ul>
@@ -91,7 +82,7 @@ export default function Page() {
             Instructions:
           </h2>
           <ol className="list-decimal pl-5 text-gray-400 text-left">
-            {recipe.instructions.split("\n").map((instruction, index) => (
+            {recipe.instructions.map((instruction, index) => (
               <li key={index}>{instruction}</li>
             ))}
           </ol>
