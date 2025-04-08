@@ -19,6 +19,7 @@ export default async function Home() {
   }
 
   const recipes = await fetchRecipes();
+  console.log(recipes);
   return (
     <>
       <div className="flex flex-col items-center p-10 w-full min-h-screen bg-[#f0f0f0] dark:bg-[#121212] text-[#121212] dark:text-[#f0f0f0]">
@@ -32,10 +33,10 @@ export default async function Home() {
             persons={recipe.persons}
             prepTime={recipe.prepTime}
             price={recipe.price}
-            // image={{
-            //   src: recipe.image.src,
-            //   alt: recipe.image.alt,
-            // }}
+            image={{
+              url: recipe.image.url,
+              alternativeText: recipe.image.alternativeText,
+            }}
           />
         ))}
         </div>

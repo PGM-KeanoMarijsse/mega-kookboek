@@ -7,11 +7,9 @@ import { FaEuroSign, FaClock } from "react-icons/fa";
 import { IoPeople } from "react-icons/io5";
 import { useParams } from "next/navigation";
 
-
 export default function Page() {
   const params = useParams();
   const { documentId } = params;
-
 
   async function fetchRecipe() {
     try {
@@ -40,6 +38,9 @@ export default function Page() {
   if (!recipe) {
     return <div>Loading...</div>;
   }
+
+  console.log(recipe);
+
   return (
     <div className="p-5 font-sans flex justify-center min-h-screen bg-[#f0f0f0] dark:bg-[#121212]">
       <div className="max-w-4xl w-full">
@@ -49,8 +50,12 @@ export default function Page() {
         <div className="flex">
           {/* Placeholder for image */}
           <div className="w-1/2 bg-gray-700 h-64 flex items-center justify-center">
-            <span className="text-gray-400">Image Placeholder</span>
+            <img
+              src={`${process.env.NEXT_PUBLIC_STRAPI_URL}${recipe.image.url}`}
+              alt={recipe.image.alternativeText}
+            />
           </div>
+
           {/* Recipe details */}
           <div className="w-1/2 pl-6">
             <div className="flex flex-col space-y-4">

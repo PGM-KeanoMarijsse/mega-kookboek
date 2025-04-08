@@ -5,8 +5,8 @@ export type recipe = {
   prepTime: number;
   price: number;
   image: {
-    src: string;
-    alt: string;
+    url: string;
+    alternativeText: string;
   };
   ingredients: string;
   instructions: string;
