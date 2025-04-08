@@ -40,7 +40,6 @@ export default function Page() {
   if (!recipe) {
     return <div>Loading...</div>;
   }
-
   return (
     <div className="p-5 font-sans flex justify-center min-h-screen bg-[#f0f0f0] dark:bg-[#121212]">
       <div className="max-w-4xl w-full">
