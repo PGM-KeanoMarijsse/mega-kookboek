@@ -2,12 +2,12 @@ export type recipe = {
   documentId: string;
   title: string;
   persons: number;
-  prepTime: number;
+  time: number;
   price: number;
   image: {
     src: string;
     alt: string;
   };
-  ingredients: [];
-  instructions: [];
+  ingredients: string[];
+  instructions: string[];
 };
