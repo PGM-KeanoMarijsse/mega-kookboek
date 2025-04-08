@@ -15,14 +15,14 @@ export default function Page() {
 
   async function fetchRecipe() {
     try {
-      const response = await request(
+      const response = await request<{ recipe: recipe }>(
         `${process.env.NEXT_PUBLIC_STRAPI_URL}/graphql`,
         getRecipeByDocumentId,
         {
           documentId: documentId,
         }
       );
-      return response.recipe as { recipe: recipe };
+      return response.recipe;
     } catch (error) {
       console.log(error);
       return null;
