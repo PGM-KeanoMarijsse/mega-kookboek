@@ -1,13 +1,18 @@
+"use client";
 import React from "react";
 import { request } from "graphql-request";
 import { getRecipeByDocumentId } from "@/graphql/recipes";
 import { recipe } from "@/types/types";
-
 import { FaEuroSign, FaClock } from "react-icons/fa";
 import { IoPeople } from "react-icons/io5";
+import { useParams } from "next/navigation";
 
-export default async function Page({ params }: { params: { documentId: string } }) {
-  const documentId = (await params).documentId;
+
+export default function Page() {
+  const params = useParams();
+  const { documentId } = params;
+
+
   async function fetchRecipe() {
     try {
       const response = await request(
@@ -23,7 +28,19 @@ export default async function Page({ params }: { params: { documentId: string } 
       return null;
     }
   }
-  const recipe = await fetchRecipe();
+
+  const [recipe, setRecipe] = React.useState<recipe | null>(null);
+
+  React.useEffect(() => {
+    fetchRecipe().then((data) => {
+      if (data) setRecipe(data);
+    });
+  }, [documentId]);
+
+  if (!recipe) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <div className="p-5 font-sans flex justify-center min-h-screen bg-[#f0f0f0] dark:bg-[#121212]">
       <div className="max-w-4xl w-full">
