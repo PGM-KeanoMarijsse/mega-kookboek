@@ -6,9 +6,8 @@ import { recipe } from "@/types/types";
 import { FaEuroSign, FaClock } from "react-icons/fa";
 import { IoPeople } from "react-icons/io5";
 
-export default async function Page({ params }: { params: { documentId: string } }) {
+export default async function Page({ params }: { params: { documentId: any } }) {
   const documentId = (await params).documentId;
-
   async function fetchRecipe() {
     try {
       const response = await request(
@@ -25,7 +24,6 @@ export default async function Page({ params }: { params: { documentId: string } 
     }
   }
   const recipe = await fetchRecipe();
-  console.log(recipe);
   return (
     <div className="p-5 font-sans flex justify-center min-h-screen bg-[#f0f0f0] dark:bg-[#121212]">
       <div className="max-w-4xl w-full">
@@ -68,7 +66,9 @@ export default async function Page({ params }: { params: { documentId: string } 
         </div>
         {/* Instructions */}
         <div className="mt-8">
-          <h2 className="text-2xl font-semibold text-gray-300">Instructions:</h2>
+          <h2 className="text-2xl font-semibold text-gray-300">
+            Instructions:
+          </h2>
           <ol className="list-decimal pl-5 text-gray-400 text-left">
             {recipe.instructions.split("\n").map((instruction, index) => (
               <li key={index}>{instruction}</li>
