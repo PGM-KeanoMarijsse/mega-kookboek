@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { getRecipes } from "@/graphql/recipes";
 import { request } from "graphql-request";
 import Card from "@/components/card/Card";
