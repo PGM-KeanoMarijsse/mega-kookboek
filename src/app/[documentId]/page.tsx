@@ -56,7 +56,7 @@ export default function Page() {
               </div>
               <div className="flex items-center text-gray-400">
                 <FaClock className="mr-2" />
-                <span>{recipe.prepTime} minuten</span>
+                <span>{recipe.time} minuten</span>
               </div>
               <div className="flex items-center text-gray-400">
                 <span>Geschatte prijs:</span>
