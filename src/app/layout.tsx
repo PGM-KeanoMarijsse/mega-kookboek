@@ -1,7 +1,10 @@
 import "./globals.css";
 import Header from "@/components/header/Header";
 
-
+export const metadata = {
+  title: "Mega kookboekje",
+  description: "Online editie",
+};
 
 export default function RootLayout({
   children,
@@ -13,9 +16,7 @@ export default function RootLayout({
       <body>
         <Header />
         <main>
-          <div>
-            {children}
-          </div>
+          <div>{children}</div>
         </main>
       </body>
     </html>
