@@ -8,4 +8,6 @@ export type recipe = {
     src: string;
     alt: string;
   };
+  ingredients: [];
+  instructions: [];
 };
